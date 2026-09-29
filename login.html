@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login | Sonic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <div id="header"></div>
+  <main class="wrap">
+    <form class="form" data-form data-msg="Login successful 🎉" data-go="index.html">
+      <h1>Welcome Back</h1>
+      <label>Email<input name="email" type="email" placeholder="*****@gmail.com"><small class="err"></small></label>
+      <label>Password<input name="password" type="password" placeholder="••••••••"><small class="err"></small></label>
+      <button class="btn">Login</button>
+      <p class="muted">New here? <a href="signup.html" style="color:var(--brand)">Create account</a></p>
+    </form>
+  </main>
+  <div id="footer"></div>
+  <div id="toasts"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
