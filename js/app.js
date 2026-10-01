@@ -80,7 +80,7 @@ function card(p) {
   return `<article class="card reveal">
     <button class="wish ${w ? "on" : ""}" data-wish="${p.id}" aria-label="Wishlist">♥</button>
     <a href="product.html?id=${p.id}">
-      <div class="thumb" style="background:${p.colors[0]}">${p.emoji}</div><h3>${p.name}</h3></a>
+            <div class="thumb">${Art.media(p)}</div><h3>${p.name}</h3></a>
     <p class="muted">★ ${p.rating} · ${p.cat}</p>
     <p><b>${price(p.price)}</b> <s class="muted">${price(p.old)}</s></p>
     <button class="btn" data-cart="${p.id}">Add to Cart</button></article>`;

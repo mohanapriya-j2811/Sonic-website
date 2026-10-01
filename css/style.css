@@ -19,7 +19,7 @@ nav{display:flex;align-items:center;gap:24px;height:64px}
 .ibtn{background:none;border:0;font-size:1.2rem;cursor:pointer;color:var(--text);position:relative;padding:6px}
 .badge{position:absolute;top:-2px;right:-4px;background:var(--brand);color:#fff;font-size:.65rem;border-radius:9px;padding:1px 5px}
 .burger{display:none}
-
+  
 /* Buttons */
 .btn{background:var(--brand);color:#fff;border:0;padding:10px 20px;border-radius:10px;cursor:pointer;font-weight:600;transition:.2s;display:inline-block;text-align:center}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #ff3b4755}
@@ -39,7 +39,9 @@ section{padding:30px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px;margin:24px 0 60px}
 .card{background:var(--card);border-radius:16px;padding:14px;position:relative;display:flex;flex-direction:column;gap:6px;transition:.3s}
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px #0002}
-.thumb{height:170px;border-radius:12px;display:grid;place-items:center;font-size:4rem;margin-bottom:8px;transition:.3s}
+.thumb{aspect-ratio:4/3;border-radius:12px;overflow:hidden;margin-bottom:8px;transition:.3s}
+.art{width:100%;height:100%;display:block}
+.art.photo{object-fit:contain;background:#fff;padding:5%}
 .card:hover .thumb{transform:scale(1.04)}
 .wish{position:absolute;top:22px;right:22px;background:#fff;border:0;border-radius:50%;width:34px;height:34px;cursor:pointer;color:#bbb;z-index:2;transition:.2s}
 .wish:hover{transform:scale(1.15)}
@@ -62,7 +64,7 @@ label{display:grid;gap:4px;font-weight:500}
 .detail{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:40px 0}
 .slider{position:relative;overflow:hidden;border-radius:20px}
 .track{display:flex;transition:transform .5s}
-.slide{min-width:100%;height:380px;display:grid;place-items:center;font-size:8rem}
+.slide{min-width:100%;height:380px}
 .arrow{position:absolute;top:50%;transform:translateY(-50%);background:#0007;color:#fff;border:0;width:38px;height:38px;border-radius:50%;cursor:pointer}
 .arrow.l{left:10px}.arrow.r{right:10px}
 .dots{display:flex;justify-content:center;gap:8px;margin-top:12px}
@@ -96,3 +98,4 @@ footer{background:var(--card);padding:30px 0;margin-top:40px;text-align:center}
   .hero-img{font-size:6rem}
   .slide{height:280px}
 }
+
